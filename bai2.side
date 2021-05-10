@@ -1,0 +1,68 @@
+{
+  "id": "812bf3f5-0d14-4e0a-ab70-edd7e3548913",
+  "version": "2.0",
+  "name": "bai2",
+  "url": "http://automationpractice.com/index.php",
+  "tests": [{
+    "id": "0baac843-c6e4-4baf-9e1a-9a5b928f132a",
+    "name": "bai2",
+    "commands": [{
+      "id": "285d7a0f-535c-4e13-8bdc-5ede0ab1e6ac",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd3ea013-a827-46ee-854b-236165176176",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a6a1db7-a61b-4523-9771-8298ee7e33b4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=my-account']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0719a14-9e5b-4387-9758-dd59aba96c1f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#SubmitLogin > span",
+      "targets": [
+        ["css=#SubmitLogin > span", "css:finder"],
+        ["xpath=//button[@id='SubmitLogin']/span", "xpath:idRelative"],
+        ["xpath=//p[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c6709ae-6b09-49ce-aaa6-9e5a4f14b4db",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "278a44d5-925a-4e59-a098-c5b0ac2f985a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0baac843-c6e4-4baf-9e1a-9a5b928f132a"]
+  }],
+  "urls": [],
+  "plugins": []
+}
